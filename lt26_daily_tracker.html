@@ -189,7 +189,7 @@ table.track tbody td.muted-cell{color:var(--muted);font-size:11px}
 <body>
 <script id="hs26-data">
 const LT26 = {
-  updated: "2026-05-19 00:00 (pendiente)", //__UPDATED__
+  updated: "2026-05-18 17:01", //__UPDATED__
   dias: [
     {fecha:'2026-05-19',label:'D1',dia:'Mar 19',ref_dia:'HS26 D2 Mar 12'},
     {fecha:'2026-05-20',label:'D2',dia:'Mie 20',ref_dia:'HS26 D3 Mie 13'},
@@ -761,12 +761,18 @@ function renderCharts(){if(typeof renderBrandCharts=="function")renderBrandChart
 // === BRAND SHARE ===
 //BS_DATA_BEGIN
 var BS_DATA={
-  "Aires Acond.": {cat_idx:0,days:{}},
-  "Televisores": {cat_idx:1,days:{}},
-  "Freidoras de Aire": {cat_idx:2,days:{}},
-  "Heladeras": {cat_idx:3,days:{}},
-  "Lavado": {cat_idx:4,days:{}},
-  "Notebooks": {cat_idx:5,days:{}},
+  "Aires Acond.": {cat_idx:0,days:{
+  }},
+  "Televisores": {cat_idx:1,days:{
+  }},
+  "Freidoras de Aire": {cat_idx:2,days:{
+  }},
+  "Heladeras": {cat_idx:3,days:{
+  }},
+  "Lavado": {cat_idx:4,days:{
+  }},
+  "Notebooks": {cat_idx:5,days:{
+  }},
 };
 //BS_DATA_END
 
@@ -836,7 +842,7 @@ function renderBrandCharts(){
 
 //SC_DATA_BEGIN
 var SC_DATA={
-  acum: {PCJ:{nsi:0,nmv:0,nasp:0},PSJ_3x:{nsi:0,nmv:0,nasp:0},PSJ_6x:{nsi:0,nmv:0,nasp:0},PSJ_9x:{nsi:0,nmv:0,nasp:0},PSJ_12x:{nsi:0,nmv:0,nasp:0},PSJ_18x:{nsi:0,nmv:0,nasp:0},COFONDEADAS:{nsi:0,nmv:0,nasp:0}},
+  acum:  {PCJ:{nsi:0,nmv:0.0,nasp:0},PSJ_3x:{nsi:0,nmv:0.0,nasp:0},PSJ_6x:{nsi:0,nmv:0.0,nasp:0},PSJ_9x:{nsi:0,nmv:0.0,nasp:0},PSJ_12x:{nsi:0,nmv:0.0,nasp:0},PSJ_18x:{nsi:0,nmv:0.0,nasp:0},COFONDEADAS:{nsi:0,nmv:0.0,nasp:0}},
 };
 var SC_ORDER=["PCJ","PSJ_3x","PSJ_6x","PSJ_9x","PSJ_12x","PSJ_18x","COFONDEADAS"];
 var SC_LABELS={"PCJ":"Clasica (1x)","PSJ_3x":"3 cuotas SI","PSJ_6x":"6 cuotas SI","PSJ_9x":"9 cuotas SI","PSJ_12x":"12 cuotas SI","PSJ_18x":"18 cuotas SI","COFONDEADAS":"Banco (co-fond.)"};
