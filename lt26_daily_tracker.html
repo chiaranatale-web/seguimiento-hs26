@@ -897,8 +897,9 @@ function renderSubcomboCharts(){
 }
 
 
-renderAll();
+try{renderAll();}catch(e){console.error("renderAll error:",e);}
 window.addEventListener("load",function(){renderCharts();});
+setTimeout(function(){if(typeof Chart!=="undefined"&&(!bsCharts||!bsCharts.nmv))renderCharts();},2000);
 
 </script>
 
