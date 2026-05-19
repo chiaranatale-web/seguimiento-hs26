@@ -562,7 +562,7 @@ function renderMain(){
 }
 
 function renderCatTable(met){
-  var tid=met==='nmv'?'cat-nmv-table':'cat-nsi-table',fn=met==='nmv'?fmtM:fmtU,yk='yoy_'+met;
+  var tid=met==='nmv'?'cat-nmv-table':'cat-nsi-table',fn=met==='nmv'?fmtM:fmtU,yk='ref_'+met;
   var tb='<tbody>';
   LT26.cats.forEach(function(cat,idx){
     var mc=LT26.mla_cats[idx];
