@@ -812,7 +812,7 @@ function bsGetData(group_ns){
 function renderBrandCharts(){
   var res=bsGetData();if(!res)return;
   var D1=res.d,cidx=res.cat_idx,dayLbl=res.day==='acum'?'Acumulado':'D'+(D.findIndex(function(x){return x.fecha===res.day;})+1)+' '+res.day;
-  var tracker=typeof LT26!=='undefined'?HS26:MF26;
+  var tracker=typeof LT26!=='undefined'?LT26:MF26;
   var PAL=['#FF6B35','#1D4ED8','#059669','#7C3AED','#F59E0B','#DB2777','#0891B2','#65A30D','#CBD5E1'];
   function getColors(brands){return brands.map(function(b,i){if(b==='Otros')return '#CBD5E1';return NS_BRANDS_LIST.indexOf(b)>=0?['#FF6B35','#F59E0B','#FBBF24','#FDE68A'][NS_BRANDS_LIST.indexOf(b)%4]:PAL[1+(i%7)];});}
   ['nmv','nsi'].forEach(function(met){
